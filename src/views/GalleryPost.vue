@@ -1,6 +1,13 @@
 <!-- src/views/GalleryPost.vue -->
 <script setup>
-import { computed, ref, reactive, onMounted, onBeforeUnmount } from "vue";
+import {
+  computed,
+  ref,
+  reactive,
+  watch,
+  onMounted,
+  onBeforeUnmount,
+} from "vue";
 import { useRoute } from "vue-router";
 import {
   findCollection,
@@ -85,6 +92,25 @@ onMounted(() => {
 onBeforeUnmount(() => {
   window.removeEventListener("scroll", handleWindowScroll);
 });
+
+// Reset scroll position whenever navigating to a different gallery post
+watch(
+  () => route.params,
+  () => {
+    // Desktop: the images container itself scrolls
+    if (mobileImagesRef.value) {
+      mobileImagesRef.value.scrollTop = 0;
+    }
+    // Mobile: the whole page scrolls
+    window.scrollTo(0, 0);
+
+    // Reset blur bar opacities
+    if (topBlurRef.value) topBlurRef.value.style.opacity = 0;
+    if (bottomBlurRef.value) bottomBlurRef.value.style.opacity = 1;
+    if (mobileTopBlurRef.value) mobileTopBlurRef.value.style.opacity = 0;
+    if (mobileBottomBlurRef.value) mobileBottomBlurRef.value.style.opacity = 1;
+  },
+);
 </script>
 
 <template>
