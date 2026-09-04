@@ -47,10 +47,10 @@
               </div>
               <div>
                 <p class="font-semibold text-primary dark:text-white">
-                  Texas A&M University
+                  Dept. of Computer Science & Engineering
                 </p>
                 <p class="text-sm text-gray-500 dark:text-gray-400">
-                  Dept. of Computer Science
+                  STMI Lab w/ Prof. Bobak Mortazavi
                 </p>
               </div>
             </div>
@@ -113,8 +113,8 @@
           class="flex flex-col md:flex-row md:items-center md:justify-between gap-2"
         >
           <p class="italic text-sm text-gray-600 dark:text-gray-400 max-w-lg">
-            M.S. student interested in HCI, AI, NLP, and Embedded Systems, with
-            applications in Software Engineering and Healthcare.
+            M.S. student interested in Machine Learning, HCI, and Embedded
+            Systems, with applications in Healthcare and Software Engineering.
           </p>
 
           <div

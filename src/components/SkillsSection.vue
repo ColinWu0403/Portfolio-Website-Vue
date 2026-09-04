@@ -1,12 +1,12 @@
 <!-- src/components/SkillsSection.vue -->
 <script setup>
 const skills = [
-  { icon: "fas fa-computer", label: "Human-Computer Interaction" },
-  { icon: "fas fa-circle-nodes", label: "Natural Language Processing" },
   { icon: "fas fa-brain", label: "Machine Learning" },
+  { icon: "fas fa-computer", label: "Human-Computer Interaction" },
   { icon: "fas fa-laptop-medical", label: "Bioinformatics" },
-  { icon: "fas fa-robot", label: "Large Language Models" },
+  { icon: "fas fa-circle-nodes", label: "Natural Language Processing" },
   { icon: "fas fa-terminal", label: "Software Engineering" },
+  { icon: "fas fa-robot", label: "Large Language Models" },
   { icon: "fas fa-microchip", label: "Embedded Systems" },
 ];
 </script>

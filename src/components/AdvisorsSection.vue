@@ -2,6 +2,11 @@
 <script setup>
 const people = [
   {
+    name: "Prof. Bobak Mortazavi",
+    role: "Texas A&M Univeristy",
+    url: "https://stmilab.github.io",
+  },
+  {
     name: "Prof. Tianyi Zhang",
     role: "Purdue Univeristy",
     url: "https://tianyi-zhang.github.io/",
